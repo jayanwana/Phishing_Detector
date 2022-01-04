@@ -43,7 +43,7 @@
 
 A simple Chrome extension application built to communicate with a backend API.
 Works by scraping the text from emails on GMail.    
-The email is then sent to a backend API (Flask App) that exposes a catboost
+The email is then sent to a backend API (Flask App), found [here](https://github.com/jayanwana/Phishing_Detector_Backend.git), that exposes a catboost
 email classifier which then classifies the email as either a phishing or
 non-phishing email after processing the text from the email.  
 The result of the classification is then displayed to the user on the extension
