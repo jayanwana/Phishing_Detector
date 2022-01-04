@@ -124,5 +124,5 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-I would like to thank Lxieyang for the boilerplate for this extension locate [here](https://github.com/lxieyang/chrome-extension-boilerplate-react)
+I would like to thank [Lxieyang]((https://github.com/lxieyang/) for the boilerplate for this extension located [here](https://github.com/lxieyang/chrome-extension-boilerplate-react)
 <p align="right">(<a href="#top">back to top</a>)</p>
