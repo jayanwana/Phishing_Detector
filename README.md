@@ -73,10 +73,10 @@ The working extension is contained in the build folder of the repository.
 Load the extension on Chrome by following these steps after cloning the repository.
 
 1. On your chrome browser, navigate to ``` chrome://extensions/ ```
-2. Enable developer mode (Top right hand corner).
-3. Select load unpacked (Top left hand).
+2. Enable developer mode (Top right corner).
+3. Select load unpacked (Top left corner).
 4. Navigate to the repository folder and select the build folder.
-5. The extension should be in extensions to right of the URL bar.
+5. Click on the extensions icon to the right of the URL bar and select the phishing detector icon.
 6. Click on the extension to reveal the pop up page.
 7. The extension only works on an open Gmail email tab.
 
