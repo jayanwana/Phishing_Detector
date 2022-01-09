@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://mail.google.com/mail/*", "https://mail.google.com/mail/*"],
+      "matches": ["https://mail.google.com/mail/u/0/?tab=*"],
       "js": ["contentScript.bundle.js"],
       "css": ["content.styles.css"]
     }

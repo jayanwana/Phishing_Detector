@@ -12,12 +12,12 @@ const Popup = () => {
     _setResponse(res)
   }
 
-  // This function is called whenever the button is clicked on the popup.catch
-  // Send a message to the content page which has access to the email page DOM
+  // This function is called whenever the button in the popup is clicked on
+  // Sends a message to the content page which has access to the email page DOM
   // to scrape the email text and send to the back end for classification
   // Also, it sends the callback function to the backend to collect the result
   const scrapeMail = () => {
-    chrome.tabs.query({currentWindow: true, active:true}, (tabs) => {
+    chrome.tabs.query({active:true, currentWindow: true}, (tabs) => {
       const activeTab = tabs[0]
       chrome.tabs.sendMessage(activeTab.id, {command: "scrapeMail"}, setResponse)
     })
@@ -28,6 +28,9 @@ const Popup = () => {
       <header className="App-header">
         <p>Click here to classify the email as Phishing or non-phishing</p>
         <button onClick={scrapeMail}>Classify Mail!</button>
+        {response?.error && (
+          <p> An error occurred</p>
+        )}
         {response?.result && (
           <>
           <h4>Result</h4>
